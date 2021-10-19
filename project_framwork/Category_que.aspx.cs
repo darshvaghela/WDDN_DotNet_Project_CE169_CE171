@@ -15,16 +15,17 @@ namespace project_framwork
         {
             string c_name = Request.QueryString["name"].ToString();
             AppDbContext db = new AppDbContext();
-            
+           
             var q = db.Questions.Where(a => a.Catagory==c_name).ToList();
 
             var html = "";
+            
             foreach (var c in q)
             {
+              
                 html += $@"<div class=""col-sm-12"">
                           <div class=""question"" >
-                             <p>views</p>
-                             <p>Answer</p>
+                             
                              <p><a  runat=""server""  href=""Answer.aspx?id={c.Id}"" style=""padding-left:100px"">{c.Questions}</a></p>
                           </div>
                          </div>";

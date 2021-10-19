@@ -15,14 +15,17 @@
           .question p{
             display:inline;
             padding-left:100px;
+           
             display:inline-grid;
         }
         .question{
+            margin-top:50px;
             margin-left:75px;
             margin-right:75px;
             padding-top:15px;
-            margin-bottom:50px;
+         
             border-radius:30px;
+             
             background-color:#F5F5F5;
             border:1px solid black
         }
@@ -39,6 +42,29 @@
              padding-bottom:30px;
                     
          }
+         .Ans_count{
+               background-color:Peru;
+               width:60px;
+               padding-left:1px;
+               text-align:center;
+               border:1px solid cornsilk;
+               border-radius:5px;
+               display:flex;
+               color:cornsilk;
+               
+           }
+           .count_value{
+                background-color:LightSalmon;
+               width:20px;
+              border:1px solid cornsilk ;
+                color:cornsilk;
+               margin-left:2px;
+                padding-left:5px;
+              
+               
+               border-radius:5px;
+
+           }
     </style>
 </head>
 <body>
